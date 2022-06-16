@@ -12,6 +12,13 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Check required environment variables
+          command: |
+            required_env=(
+              "DOCKERHUB_USERNAME"
+              "DOCKERHUB_PASSWORD"
+            )
+      - run:
           name: setup
           command: |
             apt update
