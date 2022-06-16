@@ -17,6 +17,7 @@ jobs:
             apt update
             apt install nginx -y
             service nginx start
+            apt install docker-compose -y
       - setup_remote_docker:
           version: 19.03.13
       - run:
