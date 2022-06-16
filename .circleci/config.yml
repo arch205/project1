@@ -14,9 +14,9 @@ jobs:
       - run:
           name: setup
           command: |
-            sudo apt update
-            sudo apt install nginx
-            sudo service nginx start
+            apt update
+            apt install nginx
+            service nginx start
             
           
 
