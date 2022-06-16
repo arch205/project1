@@ -15,7 +15,7 @@ jobs:
           name: setup
           command: |
             apt update
-            apt install nginx
+            apt install nginx -y
             service nginx start
             
           
