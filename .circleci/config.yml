@@ -5,10 +5,6 @@ workflows:
   ci:
     jobs:
       - build_test
-          branches:
-            only:
-              - main
-
 jobs:
   build_test:
     docker:
